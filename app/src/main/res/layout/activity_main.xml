@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#246A27"
+            android:layout_span="3"
+            android:text="Quản lý nhân viên"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Mã NV:" />
+
+        <EditText
+            android:id="@+id/edtma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên NV" />
+
+        <EditText
+            android:id="@+id/edtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính:" />
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_span="2"
+                android:id="@+id/gioitinh"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/gtnu"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Nữ" />
+                <RadioButton
+                    android:id="@+id/gtnam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nam" />
+
+            </RadioGroup>
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <Button
+            android:id="@+id/btnnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:backgroundTint="#246A27"
+            android:text="Nhập NV" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_span="3"
+           >
+
+           <TextView
+               android:layout_width="325dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_span="2"
+               android:background="#246A27"
+               android:text="Danh sách nhân viên"
+               android:textColor="@color/white"
+               android:textSize="25sp" />
+
+           <ImageButton
+               android:id="@+id/xx"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_span="0"
+               android:layout_gravity="center"
+               android:background="#00000000"
+               app:srcCompat="@drawable/xxx" />
+       </LinearLayout>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3" />
+    </TableRow>
+
+
+</TableLayout>
