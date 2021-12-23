@@ -1,2 +1,2 @@
 # NhatTan_QuanLyNhanVien
-// an shit app i created it when i lernt android
+// an shit app i created it when i learnt android
